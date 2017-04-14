@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Geo');
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+    background: url(../res/back.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+/* media query for large screens*/
+@media screen and(min-width:801px){
+a.btn.btn-lg{
+    width:150px;
+    height:100px;
+    margin-bottom: 15px;
+    margin-top:15px;
+    color:#568cc2;
+    background-color: white;
+    font-size:18px;
+    opacity:0.8;
+}
+.nav-tabs li{
+    margin-right:30px;
+}
+#navbar{
+    position:relative;
+    margin:0;
+    top:1px;
+}
+a.btn.btn-lg{
+    width:150px;
+    height:100px;
+    margin-bottom: 15px;
+    margin-top:15px;
+    color:#568cc2;
+    background-color: white;
+    font-size:18px;
+    opacity:0.8;
+}
+}
+
+/* main divs */
+#today{
+    background-image: linear-gradient(to bottom, #89b1da,transparent);
+    width:90%;
+    height:60%;
+    margin:auto;
+    padding:10px;
+    margin-left: 0;
+    border-radius:0px 150px 0px 0px;
+}
+#content{
+    background-image: linear-gradient(to bottom, #003399,transparent);
+    display:block;
+    margin:auto;
+    padding:10px;
+    width:98.5%;
+    position:relative;
+    top:-22px;
+    height:60%;
+    border-radius:0px 200px 0px 0px;
+    opacity:0.7;
+}
+/*end of main divs*/
+
+h1{
+  font-family: "Geo";
+  color: #0002aa;
+  text-shadow: 0 0 3px #FF0000;
+  font-size: 40px;
+}
+#super-title{
+  font-size: 120px;
+  font-weight: bold;
+  letter-spacing: -8px;
+}
+#thebuttonbar{
+  width: 120%;
+}
+#topNav{
+    background-color: azure;
+    margin:0;
+    padding:0;
+    border:0;
+}
+.btn-group-vertical{
+    padding:0px;
+}
+#pump{
+    margin:0;
+}
+#clicktoenlarge{
+    font-weight:bold;
+    font-size:12px;
+}
+.img-thumbnail{
+    width:200px;
+    height:200px;
+}
+h3{
+    position:relative;
+    font-family: "Tahoma";
+    font-weight:bold;
+}
+h2{
+    width:150px;
+    margin:auto;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-family: "Helvetica";
+    font-size:15px;
+    border-radius: 10px 10px 0px 0px;
+    opacity:0.5;
+}
+h6{
+    color:azure;
+}
+#slogan{
+    display:none;
+    width:200px;
+    height:40px;
+    top:65%;
+}
+#hiddenDiv{
+    display:none;
+    margin:auto;
+    padding:2px;
+    width:150px;
+    height:180px;
+    background-color:black;
+    opacity:0.5;
+}
+#hiddenDiv p{
+    position:relative;
+    top:5%;
+    color:white;
+    text-align:center;
+}
+#closedisclaimer{
+    text-align:center;
+}
+#sub{
+    width:80px;
+    border-radius: 40px;
+    background-color: azure;
+    font-weight:bold;
+    color:black;
+}
+#validationError{
+    color:red;
+    font-size:14px;
+}
+#validationError2{
+    color:red;
+    font-size:14px;
+}
+#imagetoupload{
+    display:none;
+}
+#label{
+    border:2px solid;
+    display:inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+#lastdiv{
+    padding:10px;
+    padding-bottom:0;
+    margin-bottom:0;
+    height:60px;
+}
+#formdiv{
+    padding:0;
+}
+@media screen and (max-width:800px){
+#navbar{
+    position:relative;
+    margin:0;
+    top:18px;
+}
+    #today{
+    background-image: linear-gradient(to bottom, #89b1da,transparent);
+    width:90%;
+    height:60%;
+    margin:auto;
+    padding:10px;
+    margin-left: 0;
+    border-radius:0px 20px 0px 0px;
+}
+#content{
+    background-image: linear-gradient(to bottom, #003399,transparent);
+    display:block;
+    margin:auto;
+    padding:10px;
+	padding-left:0px;
+    width:98.5%;
+    position:relative;
+    top:0px;
+    height:60%;
+    border-radius:0px 20px 0px 0px;
+    opacity:0.7;
+}
+a.btn.btn-lg{
+    width:90px;
+    height:30px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    color:#568cc2;
+    background-color: white;
+    font-size:13px;
+    font-weight:bold;
+    padding-right:0;
+    padding-left:0;
+    opacity:0.8;
+}
+.nav-tabs li{
+    margin-right:50px;
+}
+.navbar-header{
+    padding-left:5px;
+}
+#allpumps > ul{
+	margin:0;
+	padding-left:20px;
+}
+}
+.navbar-header{
+    float:left;
+}
+.navbar-toggle{
+    width:30px;
+    height:30px;
+    padding:2.5px;
+}
+.icon-bar{
+    width:28px;
+    height:5px;
+}
+.navbar-collapse{
+    padding:0;
+}
+.navbar.navbar-default{
+    margin-bottom:0;
+}
+#thebuttonbar{
+    background-color:white;
+}
+.input-sm{
+    border-radius: 20px;
+}
+#allpumps{
+    padding:0;
+}
+.g-recaptcha{
+    margin:4px;
+    transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+#disclaimerPara{
+    font-size:10px;
+}
+footer{
+    font-family:"Verdana";
+    font-size:11px;
+}
+p{
+    font-family:"Verdana";
+}
+@media screen and (max-width:700px){
+#whiteWriting{
+    color:white;
+}
+}
+input, select, textarea{
+    color: #ff0000;
+}
+@media screen and (max-width:600px){
+img{
+	width:100%;
+}
+li{
+	padding-bottom:20px;
+}
+}
