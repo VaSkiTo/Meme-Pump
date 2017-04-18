@@ -5,5 +5,5 @@ An old PHP project based on memes that was inspired by retro sites like funnypar
 #### A screenshot of the home page:
 ![alt text](public_html/screenshot/homescreen.jpg?raw=true "Screenshot")
 <br>
-#### A screenshot of the paginated all meme page 'all pumps':
+#### A screenshot of the paginated memes page titled 'all pumps':
 ![alt text](public_html/screenshot/screen.jpg?raw=true "Screenshot")
