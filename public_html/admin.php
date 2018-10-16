@@ -1,8 +1,22 @@
 <?php
 session_start();
+// in order to force the usage of secure protocol HTTPS (repeat in every .php file)
+/*if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
+  $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  header('HTTP/1.1 301 Moved Permanently');
+  header('Location: ' . $redirect);
+  exit();
+}*/
 $valid = false;
 if(isset($_POST['username'])
         &&isset($_POST['password'])){
+    //in order to limit log in retries use the code below
+    /*
+    $ip = $_SERVER["REMOTE_ADDR"];
+    mysqli_query($connection, "INSERT INTO `ip` (`address` ,`timestamp`)VALUES ('$ip',CURRENT_TIMESTAMP)");
+    $result = mysqli_query($connection, "SELECT COUNT(*) FROM `ip` WHERE `address` LIKE '$ip' AND `timestamp` > (now() - interval 10 minute)");
+    $count = mysqli_fetch_array($result, MYSQLI_NUM);
+    */
     $user = $_POST['username'];
     $pass = $_POST['password'];
     $_SESSION['user']=$user;

@@ -1,5 +1,6 @@
 <?php
-
+// Desactivar toda notificación de error
+error_reporting(0);
 require_once('recaptchalib.php');
 
 //checking if captcha was set
@@ -12,8 +13,8 @@ require_once('recaptchalib.php');
         if($arr['success']){
 
     //setting the name and email variables sent to the server
-    $email = $_POST['email'];
-    $name = $_POST['name'];
+    $email = htmlspecialchars($_POST['email']);
+    $name = htmlspecialchars($_POST['name']);
     $captchaValid = true;
 
     $filename = "txt/suggestions.txt";
@@ -21,7 +22,7 @@ require_once('recaptchalib.php');
     $handle = file_put_contents($filename, $data,FILE_APPEND);
 
     //file upload handling
-    if($_FILES['imageupload']['name']){
+    if($_FILES['imageupload']['name'] && getimagesize($filename)){
         if(!$_FILES['imageupload']['error']){
 
             $new_file_name = strtolower($_FILES['imageupload']['tmp_name']);

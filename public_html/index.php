@@ -65,6 +65,8 @@
                         <li><a class="btn btn-lg" href='allpumps.php'>All Pumps</a>
                             </li>
 							<li><a class="btn btn-lg" href='image.php?image=<?php
+              // Desactivar toda notificación de error
+              error_reporting(0);
 										$images = scandir('adminuploads/');
 										$remove = array('.','..');
 										$images = array_diff($images,$remove);
